@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HDNewPosition2Ctr">
+            <connections>
+                <outlet property="lc_tbvBottom" destination="OU6-ui-B0f" id="fSi-JO-cX1"/>
+                <outlet property="tbv" destination="Adw-M8-eUP" id="9Z3-VA-9gQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="Adw-M8-eUP" customClass="HDTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Dew-x2-v9y"/>
+                        <outlet property="delegate" destination="-1" id="jWf-Nl-KGT"/>
+                    </connections>
+                </tableView>
+                <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipE-jE-Cwu">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Em3-4W-Z4b">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Dv7-ZB-FiZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="完成">
+                        <color key="titleColor" red="0.80784313730000001" green="0.08235294118" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Dv7-ZB-FiZ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Dv7-ZB-FiZ"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="doComplete:" destination="-1" eventType="touchUpInside" id="BYE-Vj-Fw5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Em3-4W-Z4b" secondAttribute="trailing" id="6fR-kz-vHf"/>
+                <constraint firstItem="ipE-jE-Cwu" firstAttribute="height" secondItem="Em3-4W-Z4b" secondAttribute="height" id="8Da-dL-k4D"/>
+                <constraint firstAttribute="bottom" secondItem="Adw-M8-eUP" secondAttribute="bottom" id="OU6-ui-B0f">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="Em3-4W-Z4b" secondAttribute="bottom" id="XUd-MG-dYU"/>
+                <constraint firstItem="Adw-M8-eUP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c6A-oj-VJE"/>
+                <constraint firstItem="Em3-4W-Z4b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eNX-I1-rGU"/>
+                <constraint firstItem="ipE-jE-Cwu" firstAttribute="bottom" secondItem="Em3-4W-Z4b" secondAttribute="bottom" id="icx-RZ-hex"/>
+                <constraint firstItem="ipE-jE-Cwu" firstAttribute="leading" secondItem="Em3-4W-Z4b" secondAttribute="leading" id="mxh-io-dUE"/>
+                <constraint firstItem="ipE-jE-Cwu" firstAttribute="width" secondItem="Em3-4W-Z4b" secondAttribute="width" id="njk-eD-5hF"/>
+                <constraint firstAttribute="trailing" secondItem="Adw-M8-eUP" secondAttribute="trailing" id="tWZ-Rc-LcR"/>
+                <constraint firstItem="Adw-M8-eUP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uT0-Iv-v24"/>
+                <constraint firstItem="Em3-4W-Z4b" firstAttribute="bottom" secondItem="Adw-M8-eUP" secondAttribute="bottom" id="yp3-lR-nvs"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Adw-M8-eUP"/>
+                    <exclude reference="ipE-jE-Cwu"/>
+                    <exclude reference="Em3-4W-Z4b"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="6fR-kz-vHf"/>
+                    <exclude reference="XUd-MG-dYU"/>
+                    <exclude reference="eNX-I1-rGU"/>
+                    <exclude reference="yp3-lR-nvs"/>
+                    <exclude reference="OU6-ui-B0f"/>
+                    <exclude reference="c6A-oj-VJE"/>
+                    <exclude reference="tWZ-Rc-LcR"/>
+                    <exclude reference="uT0-Iv-v24"/>
+                    <exclude reference="8Da-dL-k4D"/>
+                    <exclude reference="icx-RZ-hex"/>
+                    <exclude reference="mxh-io-dUE"/>
+                    <exclude reference="njk-eD-5hF"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Adw-M8-eUP"/>
+                    <include reference="ipE-jE-Cwu"/>
+                    <include reference="Em3-4W-Z4b"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="6fR-kz-vHf"/>
+                    <exclude reference="XUd-MG-dYU"/>
+                    <include reference="eNX-I1-rGU"/>
+                    <include reference="yp3-lR-nvs"/>
+                    <include reference="OU6-ui-B0f"/>
+                    <include reference="c6A-oj-VJE"/>
+                    <include reference="tWZ-Rc-LcR"/>
+                    <include reference="uT0-Iv-v24"/>
+                    <include reference="8Da-dL-k4D"/>
+                    <include reference="icx-RZ-hex"/>
+                    <include reference="mxh-io-dUE"/>
+                    <include reference="njk-eD-5hF"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

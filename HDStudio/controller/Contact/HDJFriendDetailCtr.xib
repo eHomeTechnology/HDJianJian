@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HDJFriendDetailCtr">
+            <connections>
+                <outlet property="tbv" destination="FXY-MV-wbO" id="Jhc-z5-BHr"/>
+                <outlet property="v_section0" destination="TVA-hI-2C3" id="zxQ-nC-S4A"/>
+                <outlet property="v_section1" destination="ApQ-By-9Ea" id="K0w-cS-E5P"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="FXY-MV-wbO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ggB-uD-iyZ"/>
+                        <outlet property="delegate" destination="-1" id="jn1-N3-ABd"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.88627450980392153" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FXY-MV-wbO" secondAttribute="trailing" id="43L-vb-Ub0">
+                    <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstItem="FXY-MV-wbO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dfe-TO-qMw">
+                    <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstItem="FXY-MV-wbO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="O75-XB-Sm5"/>
+                <constraint firstAttribute="bottom" secondItem="FXY-MV-wbO" secondAttribute="bottom" id="PQc-Z4-7Lx"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="FXY-MV-wbO"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="43L-vb-Ub0"/>
+                    <exclude reference="Dfe-TO-qMw"/>
+                    <exclude reference="O75-XB-Sm5"/>
+                    <exclude reference="PQc-Z4-7Lx"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="FXY-MV-wbO"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="43L-vb-Ub0"/>
+                    <include reference="Dfe-TO-qMw"/>
+                    <include reference="O75-XB-Sm5"/>
+                    <include reference="PQc-Z4-7Lx"/>
+                </mask>
+            </variation>
+        </view>
+        <view contentMode="scaleToFill" id="TVA-hI-2C3">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  荐友" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDr-gX-KYN">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mDr-gX-KYN" firstAttribute="leading" secondItem="TVA-hI-2C3" secondAttribute="leading" id="RLa-HP-oeA"/>
+                <constraint firstItem="mDr-gX-KYN" firstAttribute="top" secondItem="TVA-hI-2C3" secondAttribute="top" id="g3h-jI-20w"/>
+                <constraint firstAttribute="trailing" secondItem="mDr-gX-KYN" secondAttribute="trailing" id="tEP-Yj-HnD"/>
+                <constraint firstAttribute="bottom" secondItem="mDr-gX-KYN" secondAttribute="bottom" constant="1" id="vZh-Ai-LTg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="mDr-gX-KYN"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="RLa-HP-oeA"/>
+                    <exclude reference="g3h-jI-20w"/>
+                    <exclude reference="tEP-Yj-HnD"/>
+                    <exclude reference="vZh-Ai-LTg"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="mDr-gX-KYN"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="RLa-HP-oeA"/>
+                    <include reference="g3h-jI-20w"/>
+                    <include reference="tEP-Yj-HnD"/>
+                    <include reference="vZh-Ai-LTg"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="203" y="787.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="ApQ-By-9Ea">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  推荐简历" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnp-xp-k48">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qnp-xp-k48" secondAttribute="bottom" constant="1" id="3uq-bM-LJi"/>
+                <constraint firstAttribute="trailing" secondItem="qnp-xp-k48" secondAttribute="trailing" id="IEk-MA-SBK"/>
+                <constraint firstItem="qnp-xp-k48" firstAttribute="leading" secondItem="ApQ-By-9Ea" secondAttribute="leading" id="J5V-vj-uaq"/>
+                <constraint firstItem="qnp-xp-k48" firstAttribute="top" secondItem="ApQ-By-9Ea" secondAttribute="top" id="mQS-A1-rXr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="qnp-xp-k48"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="3uq-bM-LJi"/>
+                    <exclude reference="IEk-MA-SBK"/>
+                    <exclude reference="J5V-vj-uaq"/>
+                    <exclude reference="mQS-A1-rXr"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="qnp-xp-k48"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="3uq-bM-LJi"/>
+                    <include reference="IEk-MA-SBK"/>
+                    <include reference="J5V-vj-uaq"/>
+                    <include reference="mQS-A1-rXr"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="203" y="899.5"/>
+        </view>
+    </objects>
+</document>

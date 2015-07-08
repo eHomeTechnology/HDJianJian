@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="S0k-yk-ZHi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HDBlogPositionView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diU-A7-wuo">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="i6N-6K-tLK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="btn_extend">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="btn_contract"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="i6N-6K-tLK"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="i6N-6K-tLK"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="doExtend:" destination="iN0-l3-epB" eventType="touchUpInside" id="uFA-JZ-INk"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IRi-lR-RY7" customClass="HDTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="eIi-eD-ik6"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="f2R-CU-uvv"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="diU-A7-wuo" secondAttribute="bottom" id="ETy-U5-LwK"/>
+                <constraint firstItem="IRi-lR-RY7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rhg-CP-7Pk"/>
+                <constraint firstItem="IRi-lR-RY7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Slj-3t-Xev"/>
+                <constraint firstItem="diU-A7-wuo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VUz-ev-fFg"/>
+                <constraint firstAttribute="trailing" secondItem="diU-A7-wuo" secondAttribute="trailing" id="g1v-Xd-imw"/>
+                <constraint firstAttribute="trailing" secondItem="IRi-lR-RY7" secondAttribute="trailing" id="sTl-vp-ZhC"/>
+                <constraint firstItem="diU-A7-wuo" firstAttribute="top" secondItem="IRi-lR-RY7" secondAttribute="bottom" id="zws-rT-1WN"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="diU-A7-wuo"/>
+                    <exclude reference="IRi-lR-RY7"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="ETy-U5-LwK"/>
+                    <exclude reference="VUz-ev-fFg"/>
+                    <exclude reference="g1v-Xd-imw"/>
+                    <exclude reference="zws-rT-1WN"/>
+                    <exclude reference="Rhg-CP-7Pk"/>
+                    <exclude reference="Slj-3t-Xev"/>
+                    <exclude reference="sTl-vp-ZhC"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="diU-A7-wuo"/>
+                    <include reference="IRi-lR-RY7"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="ETy-U5-LwK"/>
+                    <include reference="VUz-ev-fFg"/>
+                    <include reference="g1v-Xd-imw"/>
+                    <include reference="zws-rT-1WN"/>
+                    <include reference="Rhg-CP-7Pk"/>
+                    <include reference="Slj-3t-Xev"/>
+                    <include reference="sTl-vp-ZhC"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="btn_extend" destination="diU-A7-wuo" id="d2L-fX-SrW"/>
+                <outlet property="lc_heightExtend" destination="i6N-6K-tLK" id="4Zg-Vu-EmA"/>
+                <outlet property="tbv" destination="IRi-lR-RY7" id="fmf-zC-bIa"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_contract" width="45" height="45"/>
+        <image name="btn_extend" width="45" height="45"/>
+    </resources>
+</document>

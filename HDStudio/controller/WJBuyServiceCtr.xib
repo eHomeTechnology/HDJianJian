@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WJBuyServiceCtr">
+            <connections>
+                <outlet property="btn_payment" destination="HTG-Js-EV4" id="n3L-H7-w86"/>
+                <outlet property="tbv" destination="iqu-0m-F0u" id="LUO-Of-l0J"/>
+                <outlet property="v_foot" destination="rcf-gd-c45" id="jfL-Ag-i2t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="iqu-0m-F0u">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3RJ-tf-3z2"/>
+                        <outlet property="delegate" destination="-1" id="a4w-wm-VLF"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iqu-0m-F0u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Cds-gm-dxW"/>
+                <constraint firstAttribute="bottom" secondItem="iqu-0m-F0u" secondAttribute="bottom" id="JGd-Mv-9gv"/>
+                <constraint firstAttribute="trailing" secondItem="iqu-0m-F0u" secondAttribute="trailing" id="UjE-ep-J9t"/>
+                <constraint firstItem="iqu-0m-F0u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zGC-2x-aD7"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="iqu-0m-F0u"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Cds-gm-dxW"/>
+                    <exclude reference="JGd-Mv-9gv"/>
+                    <exclude reference="UjE-ep-J9t"/>
+                    <exclude reference="zGC-2x-aD7"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="iqu-0m-F0u"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Cds-gm-dxW"/>
+                    <include reference="JGd-Mv-9gv"/>
+                    <include reference="UjE-ep-J9t"/>
+                    <include reference="zGC-2x-aD7"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="222" y="314"/>
+        </view>
+        <view contentMode="scaleToFill" id="rcf-gd-c45" userLabel="footView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTG-Js-EV4">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.74509803919999995" green="0.13725490200000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="IHl-np-wP5"/>
+                    </constraints>
+                    <state key="normal" title="确认支付">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="IHl-np-wP5"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="IHl-np-wP5"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="payment:" destination="-1" eventType="touchUpInside" id="9ht-mG-rQf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HTG-Js-EV4" secondAttribute="trailing" constant="20" id="l0J-X0-1Pb"/>
+                <constraint firstAttribute="centerY" secondItem="HTG-Js-EV4" secondAttribute="centerY" id="l8a-97-a3b"/>
+                <constraint firstItem="HTG-Js-EV4" firstAttribute="leading" secondItem="rcf-gd-c45" secondAttribute="leading" constant="20" id="viI-JL-vl4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="HTG-Js-EV4"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="l0J-X0-1Pb"/>
+                    <exclude reference="l8a-97-a3b"/>
+                    <exclude reference="viI-JL-vl4"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="HTG-Js-EV4"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="l0J-X0-1Pb"/>
+                    <include reference="l8a-97-a3b"/>
+                    <include reference="viI-JL-vl4"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="666" y="207"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>sClientDownload</key>
+	<string>http://117.27.142.77/apps/download/jianjian.apk</string>
+	<key>sDataVersion</key>
+	<string>20150611</string>
+	<key>sCloudsite_webroot</key>
+	<string>http://export.liudu.com/api/</string>
+	<key>sLogo_app</key>
+	<string>http://app2.liudu.com/Images/Logo/App.png</string>
+	<key>sLogo_position</key>
+	<string>http://app2.liudu.com/Images/Logo/App.png</string>
+	<key>sLogo_shop</key>
+	<string>http://app2.liudu.com/Images/Logo/Shop.png</string>
+	<key>sWebsite_approot</key>
+	<string>http://app2.liudu.com/</string>
+	<key>sWebsite_waproot</key>
+	<string>http://wap.liudu.com/</string>
+	<key>sWebsite_webroot</key>
+	<string>http://www.liudu.com/</string>
+</dict>
+</plist>

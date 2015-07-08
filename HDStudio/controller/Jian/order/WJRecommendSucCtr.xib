@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WJRecommendSucCtr">
+            <connections>
+                <outlet property="btn_recommendAgain" destination="HFa-Ll-Cck" id="jey-gw-XX0"/>
+                <outlet property="btn_recommendPeople" destination="fyp-bb-ziJ" id="98E-Mp-aC8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_selectCyan" translatesAutoresizingMaskIntoConstraints="NO" id="Z9k-jq-Omy">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="cyN-aD-JKB"/>
+                        <constraint firstAttribute="height" constant="50" id="vqI-Yn-bdi"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="cyN-aD-JKB"/>
+                            <exclude reference="vqI-Yn-bdi"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="cyN-aD-JKB"/>
+                            <include reference="vqI-Yn-bdi"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜,推荐成功!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAY-RK-2h7">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="MVY-rg-uct"/>
+                        <constraint firstAttribute="width" constant="150" id="mD4-uB-b0v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="MVY-rg-uct"/>
+                            <exclude reference="mD4-uB-b0v"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="MVY-rg-uct"/>
+                            <include reference="mD4-uB-b0v"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFa-Ll-Cck">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.74509803919999995" green="0.13725490200000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ogg-iI-Rsp"/>
+                    </constraints>
+                    <state key="normal" title="继续推荐">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Ogg-iI-Rsp"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Ogg-iI-Rsp"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="recommendAgain:" destination="-1" eventType="touchUpInside" id="dLg-rH-znB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyp-bb-ziJ">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.74509803919999995" green="0.13725490200000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="IHV-VE-1Pp"/>
+                    </constraints>
+                    <state key="normal" title="推荐的人才">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="IHV-VE-1Pp"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="IHV-VE-1Pp"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="recommendPeople:" destination="-1" eventType="touchUpInside" id="eBY-D8-F5g"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.8901960784313725" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Z9k-jq-Omy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="21" id="0CT-tR-odk"/>
+                <constraint firstItem="zAY-RK-2h7" firstAttribute="top" secondItem="Z9k-jq-Omy" secondAttribute="bottom" constant="16" id="5e5-1b-ndf"/>
+                <constraint firstItem="fyp-bb-ziJ" firstAttribute="top" secondItem="HFa-Ll-Cck" secondAttribute="bottom" constant="22" id="H9v-WY-1zP"/>
+                <constraint firstItem="HFa-Ll-Cck" firstAttribute="top" secondItem="zAY-RK-2h7" secondAttribute="bottom" constant="14" id="K35-kH-tkI"/>
+                <constraint firstItem="fyp-bb-ziJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Weh-uJ-giN"/>
+                <constraint firstItem="Z9k-jq-Omy" firstAttribute="centerX" secondItem="zAY-RK-2h7" secondAttribute="centerX" id="afO-WZ-XRp"/>
+                <constraint firstAttribute="centerX" secondItem="Z9k-jq-Omy" secondAttribute="centerX" id="fnN-mY-a2E"/>
+                <constraint firstItem="HFa-Ll-Cck" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="l3a-pX-99b"/>
+                <constraint firstAttribute="trailing" secondItem="HFa-Ll-Cck" secondAttribute="trailing" constant="20" id="pcU-PI-D0T"/>
+                <constraint firstAttribute="trailing" secondItem="fyp-bb-ziJ" secondAttribute="trailing" constant="20" id="sA9-5W-YUq"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Z9k-jq-Omy"/>
+                    <exclude reference="zAY-RK-2h7"/>
+                    <exclude reference="HFa-Ll-Cck"/>
+                    <exclude reference="fyp-bb-ziJ"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="5e5-1b-ndf"/>
+                    <exclude reference="K35-kH-tkI"/>
+                    <exclude reference="l3a-pX-99b"/>
+                    <exclude reference="pcU-PI-D0T"/>
+                    <exclude reference="H9v-WY-1zP"/>
+                    <exclude reference="Weh-uJ-giN"/>
+                    <exclude reference="sA9-5W-YUq"/>
+                    <exclude reference="0CT-tR-odk"/>
+                    <exclude reference="afO-WZ-XRp"/>
+                    <exclude reference="fnN-mY-a2E"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Z9k-jq-Omy"/>
+                    <include reference="zAY-RK-2h7"/>
+                    <include reference="HFa-Ll-Cck"/>
+                    <include reference="fyp-bb-ziJ"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="5e5-1b-ndf"/>
+                    <include reference="K35-kH-tkI"/>
+                    <include reference="l3a-pX-99b"/>
+                    <include reference="pcU-PI-D0T"/>
+                    <include reference="H9v-WY-1zP"/>
+                    <include reference="Weh-uJ-giN"/>
+                    <include reference="sA9-5W-YUq"/>
+                    <include reference="0CT-tR-odk"/>
+                    <include reference="afO-WZ-XRp"/>
+                    <include reference="fnN-mY-a2E"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_selectCyan" width="76" height="75"/>
+    </resources>
+</document>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HDApproveViewCtr">
+            <connections>
+                <outlet property="tbv" destination="GV5-Kk-KNh" id="30v-ic-qhn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhi-az-VCb">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="DzK-T3-exG"/>
+                        <constraint firstAttribute="width" constant="100" id="oBW-sp-Vdn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="110"/>
+                    <state key="normal" backgroundImage="btn_plusRed">
+                        <color key="titleColor" red="0.80784313730000001" green="0.08235294118" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="DzK-T3-exG"/>
+                            <exclude reference="oBW-sp-Vdn"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="DzK-T3-exG"/>
+                            <include reference="oBW-sp-Vdn"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="doAskForApprove:" destination="-1" eventType="touchUpInside" id="z9p-To-WPc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有认证过，点击下方按钮赶紧去认证吧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hkt-Rl-cod">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="P5G-aa-fQb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.80784313730000001" green="0.08235294118" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="P5G-aa-fQb"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="P5G-aa-fQb"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0R-wo-riw">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.80784313730000001" green="0.08235294118" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4IC-8L-Bmq"/>
+                    </constraints>
+                    <state key="normal" title="申请认证">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="4IC-8L-Bmq"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="4IC-8L-Bmq"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="doAskForApprove:" destination="-1" eventType="touchUpInside" id="u21-vY-V3K"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="GV5-Kk-KNh" customClass="HDTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fx3-Ee-1Qc"/>
+                        <outlet property="delegate" destination="-1" id="fST-Hs-j0A"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Z0R-wo-riw" firstAttribute="top" secondItem="hkt-Rl-cod" secondAttribute="bottom" constant="20" id="57m-w9-eHA"/>
+                <constraint firstAttribute="trailing" secondItem="GV5-Kk-KNh" secondAttribute="trailing" id="8U3-r3-gI0"/>
+                <constraint firstItem="Z0R-wo-riw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="AbT-jf-CFU"/>
+                <constraint firstItem="GV5-Kk-KNh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ohd-HP-Nc2"/>
+                <constraint firstAttribute="centerX" secondItem="Dhi-az-VCb" secondAttribute="centerX" id="Qg2-jN-qGN"/>
+                <constraint firstAttribute="centerY" secondItem="Z0R-wo-riw" secondAttribute="centerY" constant="100" id="am1-kX-TsO">
+                    <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="hkt-Rl-cod" secondAttribute="trailing" constant="20" id="c5r-nK-GcS"/>
+                <constraint firstItem="hkt-Rl-cod" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="rmS-52-2aD"/>
+                <constraint firstItem="Dhi-az-VCb" firstAttribute="leading" secondItem="GV5-Kk-KNh" secondAttribute="trailing" id="sHC-Vf-0Dh"/>
+                <constraint firstAttribute="trailing" secondItem="Z0R-wo-riw" secondAttribute="trailing" constant="20" id="v9V-Cp-MSb"/>
+                <constraint firstItem="GV5-Kk-KNh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wt7-MP-WfX"/>
+                <constraint firstAttribute="bottom" secondItem="GV5-Kk-KNh" secondAttribute="bottom" id="xfr-bF-pIF"/>
+                <constraint firstItem="hkt-Rl-cod" firstAttribute="top" secondItem="Dhi-az-VCb" secondAttribute="bottom" constant="8" id="yrR-xA-0pL"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Dhi-az-VCb"/>
+                    <exclude reference="hkt-Rl-cod"/>
+                    <exclude reference="Z0R-wo-riw"/>
+                    <exclude reference="GV5-Kk-KNh"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="c5r-nK-GcS"/>
+                    <exclude reference="rmS-52-2aD"/>
+                    <exclude reference="yrR-xA-0pL"/>
+                    <exclude reference="Qg2-jN-qGN"/>
+                    <exclude reference="sHC-Vf-0Dh"/>
+                    <exclude reference="57m-w9-eHA"/>
+                    <exclude reference="AbT-jf-CFU"/>
+                    <exclude reference="am1-kX-TsO"/>
+                    <exclude reference="v9V-Cp-MSb"/>
+                    <exclude reference="8U3-r3-gI0"/>
+                    <exclude reference="Ohd-HP-Nc2"/>
+                    <exclude reference="wt7-MP-WfX"/>
+                    <exclude reference="xfr-bF-pIF"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Dhi-az-VCb"/>
+                    <include reference="hkt-Rl-cod"/>
+                    <include reference="Z0R-wo-riw"/>
+                    <include reference="GV5-Kk-KNh"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="c5r-nK-GcS"/>
+                    <include reference="rmS-52-2aD"/>
+                    <include reference="yrR-xA-0pL"/>
+                    <include reference="Qg2-jN-qGN"/>
+                    <exclude reference="sHC-Vf-0Dh"/>
+                    <include reference="57m-w9-eHA"/>
+                    <include reference="AbT-jf-CFU"/>
+                    <include reference="am1-kX-TsO"/>
+                    <include reference="v9V-Cp-MSb"/>
+                    <include reference="8U3-r3-gI0"/>
+                    <include reference="Ohd-HP-Nc2"/>
+                    <include reference="wt7-MP-WfX"/>
+                    <include reference="xfr-bF-pIF"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="432" y="125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_plusRed" width="90" height="90"/>
+    </resources>
+</document>

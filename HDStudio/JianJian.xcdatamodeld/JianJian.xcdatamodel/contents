@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D131" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="WJSearchOrderCache" representedClassName="WJSearchOrderCache" syncable="YES">
+        <attribute name="bountyStr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="industryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="industryStr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keywordStr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="positionId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="positionStr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workPlaceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workPlaceStr" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="WJSearchOrderCache" positionX="-54" positionY="-9" width="128" height="163"/>
+    </elements>
+</model>

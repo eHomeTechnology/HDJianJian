@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="63" id="6x3-ea-6tb" customClass="HDNewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6x3-ea-6tb" id="iy7-8q-LFs">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ILT-F0-uVx">
+                        <rect key="frame" x="8" y="8" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ILT-F0-uVx" secondAttribute="height" multiplier="1:1" id="iue-LT-gup"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名 陈世美  学历本科   工作年限 10年以上  性别 女" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qED-To-Z5g">
+                        <rect key="frame" x="59" y="38" width="220" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="amd-VN-qEE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.38431372549999998" green="0.38431372549999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昨天" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ut-si-DCv">
+                        <rect key="frame" x="255" y="8" width="100" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="eON-zr-3q3"/>
+                            <constraint firstAttribute="height" constant="17" id="ftC-kU-5jB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.38431372549999998" green="0.38431372549999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="荐荐团队" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BH-Bq-qK8">
+                        <rect key="frame" x="59" y="10" width="190" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="190" id="KZv-JN-ut2"/>
+                            <constraint firstAttribute="height" constant="15" id="bWs-Gr-bXT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUN-9h-vFy">
+                        <rect key="frame" x="46" y="4" width="10" height="10"/>
+                        <color key="backgroundColor" red="0.80784313730000001" green="0.08235294118" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Bbc-tR-7pR"/>
+                            <constraint firstAttribute="width" constant="10" id="hn2-XR-GXi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="qED-To-Z5g" secondAttribute="trailing" constant="76" id="3xK-0O-czx"/>
+                    <constraint firstItem="8Ut-si-DCv" firstAttribute="top" secondItem="3BH-Bq-qK8" secondAttribute="top" constant="-2" id="7fo-gD-41w"/>
+                    <constraint firstItem="ILT-F0-uVx" firstAttribute="top" secondItem="iy7-8q-LFs" secondAttribute="topMargin" id="7t2-E6-0Gg"/>
+                    <constraint firstItem="tUN-9h-vFy" firstAttribute="top" secondItem="iy7-8q-LFs" secondAttribute="topMargin" constant="-4" id="EIY-bc-Ixc"/>
+                    <constraint firstItem="tUN-9h-vFy" firstAttribute="leading" secondItem="iy7-8q-LFs" secondAttribute="leadingMargin" constant="38" id="RB1-Sj-ja2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ILT-F0-uVx" secondAttribute="bottom" id="TCK-1A-pBD"/>
+                    <constraint firstItem="qED-To-Z5g" firstAttribute="leading" secondItem="3BH-Bq-qK8" secondAttribute="leading" id="WyO-Xp-4BJ"/>
+                    <constraint firstItem="qED-To-Z5g" firstAttribute="bottom" secondItem="ILT-F0-uVx" secondAttribute="bottom" id="dcX-yQ-g0P"/>
+                    <constraint firstItem="8Ut-si-DCv" firstAttribute="trailing" secondItem="iy7-8q-LFs" secondAttribute="trailingMargin" id="hQE-pd-4Dp"/>
+                    <constraint firstItem="ILT-F0-uVx" firstAttribute="leading" secondItem="iy7-8q-LFs" secondAttribute="leadingMargin" id="uqd-jQ-b9H"/>
+                    <constraint firstItem="3BH-Bq-qK8" firstAttribute="leading" secondItem="ILT-F0-uVx" secondAttribute="trailing" constant="8" id="v63-oe-Xfu"/>
+                    <constraint firstItem="ILT-F0-uVx" firstAttribute="top" secondItem="3BH-Bq-qK8" secondAttribute="top" constant="-2" id="xJj-Ap-oTy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imv_head" destination="ILT-F0-uVx" id="G6r-7t-MJa"/>
+                <outlet property="lb_time" destination="8Ut-si-DCv" id="LFD-TL-ISy"/>
+                <outlet property="lb_title" destination="3BH-Bq-qK8" id="cuu-Dk-EMA"/>
+                <outlet property="lb_value" destination="qED-To-Z5g" id="1KP-WL-zaj"/>
+                <outlet property="v_redDot" destination="tUN-9h-vFy" id="Fvb-U6-guS"/>
+            </connections>
+            <point key="canvasLocation" x="332" y="183.5"/>
+        </tableViewCell>
+    </objects>
+</document>

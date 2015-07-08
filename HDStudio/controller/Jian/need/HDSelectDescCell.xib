@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HDSelectDescCell" rowHeight="219" id="RCf-wA-dBx" customClass="HDSelectDescCell">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="222"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RCf-wA-dBx" id="R7V-ML-e58">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLK-EG-HDD">
+                        <rect key="frame" x="0.0" y="0.0" width="410" height="160"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="152" id="sQm-5t-try"/>
+                        </constraints>
+                        <string key="text">工作地点：北京-朝阳区	　    招聘人数：1工作年限：5-7年	　　　　  学　　历：大专	薪水范围：面议薪酬福利: 周末双休 带薪年假 员工旅游 节日福利 全勤奖 人才推荐奖 奖金丰厚 绩效奖金职位标签: 品牌运营 品牌推广 媒体合作 工作地点：北京-朝阳区	　    招聘人数：1工作年限：5-7年	　　　　  学　　历：大专	薪水范围：面议薪酬福利: 周末双休 带薪年假 员工旅游 节日福利 全勤奖 人才推荐奖 奖金丰厚 绩效奖金职位标签: 品牌运营 品牌推广 媒体合作 </string>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="sQm-5t-try"/>
+                            </mask>
+                        </variation>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IU-FD-Jxp">
+                        <rect key="frame" x="0.0" y="140" width="410" height="32"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="eS9-vK-Lae"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnj-Hh-OgG" customClass="ExtendButton">
+                        <rect key="frame" x="0.0" y="173" width="410" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="953-ye-BOJ"/>
+                        </constraints>
+                        <state key="normal" title="导入描述">
+                            <color key="titleColor" red="0.80784313730000001" green="0.08235294118" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Abh-mZ-oHb">
+                        <rect key="frame" x="0.0" y="172" width="410" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="A9r-vv-lRM"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7d-fN-6kR" customClass="ExtendButton">
+                        <rect key="frame" x="189" y="140" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="m7d-fN-6kR" secondAttribute="height" multiplier="1:1" id="spv-YB-VHy"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="btn_extend">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6IU-FD-Jxp" firstAttribute="leading" secondItem="R7V-ML-e58" secondAttribute="leadingMargin" constant="-8" id="6yr-RK-jQQ"/>
+                    <constraint firstItem="6IU-FD-Jxp" firstAttribute="centerX" secondItem="Lnj-Hh-OgG" secondAttribute="centerX" id="8FS-x4-vnZ"/>
+                    <constraint firstItem="6IU-FD-Jxp" firstAttribute="width" secondItem="Lnj-Hh-OgG" secondAttribute="width" id="8Os-pj-Ux9"/>
+                    <constraint firstItem="6IU-FD-Jxp" firstAttribute="top" secondItem="vLK-EG-HDD" secondAttribute="bottom" constant="-19" id="JYB-Iy-aNu"/>
+                    <constraint firstItem="Abh-mZ-oHb" firstAttribute="top" secondItem="6IU-FD-Jxp" secondAttribute="bottom" id="Jyy-h6-BrV"/>
+                    <constraint firstItem="vLK-EG-HDD" firstAttribute="top" secondItem="R7V-ML-e58" secondAttribute="topMargin" constant="-8" id="LNr-Hg-nON"/>
+                    <constraint firstItem="vLK-EG-HDD" firstAttribute="leading" secondItem="R7V-ML-e58" secondAttribute="leadingMargin" constant="-8" id="MxC-7k-tgb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Abh-mZ-oHb" secondAttribute="trailing" constant="-8" id="To7-h8-n3t"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6IU-FD-Jxp" secondAttribute="trailing" constant="-8" id="WD7-My-fe3"/>
+                    <constraint firstItem="m7d-fN-6kR" firstAttribute="top" secondItem="vLK-EG-HDD" secondAttribute="bottom" constant="-20" id="dFd-y9-5zb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vLK-EG-HDD" secondAttribute="trailing" constant="-8" id="eeC-Fu-U2f"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Lnj-Hh-OgG" secondAttribute="bottom" constant="-8" id="fpN-2U-cz2"/>
+                    <constraint firstItem="6IU-FD-Jxp" firstAttribute="centerY" secondItem="m7d-fN-6kR" secondAttribute="centerY" id="hMb-bY-yvl"/>
+                    <constraint firstItem="Lnj-Hh-OgG" firstAttribute="top" secondItem="Abh-mZ-oHb" secondAttribute="bottom" id="j3O-Ti-QJ5"/>
+                    <constraint firstItem="6IU-FD-Jxp" firstAttribute="height" secondItem="Lnj-Hh-OgG" secondAttribute="height" multiplier="2:3" id="lOj-3y-5rS"/>
+                    <constraint firstItem="6IU-FD-Jxp" firstAttribute="centerX" secondItem="m7d-fN-6kR" secondAttribute="centerX" id="oLg-Ji-mBG"/>
+                    <constraint firstItem="Abh-mZ-oHb" firstAttribute="leading" secondItem="R7V-ML-e58" secondAttribute="leadingMargin" constant="-8" id="pFK-YQ-61s"/>
+                    <constraint firstItem="6IU-FD-Jxp" firstAttribute="height" secondItem="m7d-fN-6kR" secondAttribute="height" id="sWc-n2-rVq"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="JYB-Iy-aNu"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn_extend" destination="m7d-fN-6kR" id="IkZ-EO-5zB"/>
+                <outlet property="btn_import" destination="Lnj-Hh-OgG" id="L2R-uT-SBh"/>
+                <outlet property="lc_tvHeight" destination="sQm-5t-try" id="OL9-yf-mjy"/>
+                <outlet property="tv" destination="vLK-EG-HDD" id="9Qd-4R-Wdn"/>
+            </connections>
+            <point key="canvasLocation" x="288" y="184"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_extend" width="45" height="45"/>
+    </resources>
+</document>

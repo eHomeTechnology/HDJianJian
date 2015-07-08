@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HDMyOrderCtr">
+            <connections>
+                <outlet property="btn_releaseTime" destination="RJs-lR-rzf" id="2tQ-xU-Esn"/>
+                <outlet property="btn_reward" destination="fJb-x9-ZXU" id="Syf-uA-THT"/>
+                <outlet property="tbv" destination="Srm-Jr-5DJ" id="dAC-11-jqK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQj-ab-zwm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59M-vJ-IcZ" userLabel="LineView">
+                            <rect key="frame" x="160" y="10" width="1" height="24"/>
+                            <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="S3L-1a-JfC"/>
+                                <constraint firstAttribute="height" constant="24" id="Vna-Ml-fgD"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJb-x9-ZXU">
+                            <rect key="frame" x="161" y="0.0" width="159" height="44"/>
+                            <state key="normal" title="赏金 ↑">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.74509803919999995" green="0.13725490200000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="reward:" destination="-1" eventType="touchUpInside" id="nAr-wH-Vlc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJs-lR-rzf">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
+                            <state key="normal" title="发布时间 ↑">
+                                <color key="titleColor" red="0.1450980392" green="0.1764705882" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.74509803919999995" green="0.13725490200000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="releaseTime:" destination="-1" eventType="touchUpInside" id="ZSN-jm-9eK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="59M-vJ-IcZ" secondAttribute="centerX" id="BaB-2H-c8h"/>
+                        <constraint firstAttribute="bottom" secondItem="fJb-x9-ZXU" secondAttribute="bottom" id="Fsc-MF-Ln4"/>
+                        <constraint firstItem="RJs-lR-rzf" firstAttribute="leading" secondItem="aQj-ab-zwm" secondAttribute="leading" id="HZU-EB-0Ah"/>
+                        <constraint firstItem="fJb-x9-ZXU" firstAttribute="top" secondItem="aQj-ab-zwm" secondAttribute="top" id="Oi8-3P-Ukx"/>
+                        <constraint firstItem="fJb-x9-ZXU" firstAttribute="leading" secondItem="59M-vJ-IcZ" secondAttribute="trailing" id="SPz-MN-1eg"/>
+                        <constraint firstAttribute="centerY" secondItem="59M-vJ-IcZ" secondAttribute="centerY" id="SRX-JF-dXC"/>
+                        <constraint firstAttribute="bottom" secondItem="RJs-lR-rzf" secondAttribute="bottom" id="TMu-JX-zQ8"/>
+                        <constraint firstAttribute="trailing" secondItem="fJb-x9-ZXU" secondAttribute="trailing" id="YSD-tu-Wyl"/>
+                        <constraint firstItem="RJs-lR-rzf" firstAttribute="top" secondItem="aQj-ab-zwm" secondAttribute="top" id="tEC-Jc-z2w"/>
+                        <constraint firstItem="59M-vJ-IcZ" firstAttribute="leading" secondItem="RJs-lR-rzf" secondAttribute="trailing" id="uzm-DC-niA"/>
+                        <constraint firstAttribute="height" constant="44" id="xlW-lp-zFo"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="Srm-Jr-5DJ">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="OU5-7H-wTO"/>
+                        <outlet property="delegate" destination="-1" id="YEF-rz-HNV"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Srm-Jr-5DJ" secondAttribute="trailing" id="Eck-1B-djQ"/>
+                <constraint firstAttribute="trailing" secondItem="aQj-ab-zwm" secondAttribute="trailing" id="PKb-BD-kzF"/>
+                <constraint firstItem="aQj-ab-zwm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YM1-o1-rrF"/>
+                <constraint firstItem="aQj-ab-zwm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cB2-AH-y9s"/>
+                <constraint firstAttribute="bottom" secondItem="Srm-Jr-5DJ" secondAttribute="bottom" id="cdn-UU-4LI"/>
+                <constraint firstItem="Srm-Jr-5DJ" firstAttribute="top" secondItem="aQj-ab-zwm" secondAttribute="bottom" id="gJb-2y-25M"/>
+                <constraint firstItem="Srm-Jr-5DJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="w0Q-TK-AxG"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

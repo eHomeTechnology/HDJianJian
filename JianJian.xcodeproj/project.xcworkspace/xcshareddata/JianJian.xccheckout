@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>34DAE3DC-282D-4DB7-9070-BED36E447324</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2ff5720a-6351-464a-8e3c-6a05596eb0ec++3444</key>
+		<string>http://192.168.100.75:8081/svn/02_Master/01_src/101_MicroJian/03_IOS/HDMicroHunter</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JianJian.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2ff5720a-6351-464a-8e3c-6a05596eb0ec++3444</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>2ff5720a-6351-464a-8e3c-6a05596eb0ec++3444</key>
+		<string>http://192.168.100.75:8081/svn/02_Master</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://192.168.100.75:8081/svn/02_Master/01_src/101_MicroJian/03_IOS/HDMicroHunter/JianJian.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2ff5720a-6351-464a-8e3c-6a05596eb0ec++3444</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2ff5720a-6351-464a-8e3c-6a05596eb0ec++3444</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SVN_JianJian</string>
+		</dict>
+	</array>
+</dict>
+</plist>

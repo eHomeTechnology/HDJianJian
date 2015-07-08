@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HDCompleteViewCtr">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="才铺张罗好了，就等人才上门了" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRD-hY-ckG">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="kqg-RR-EJN"/>
+                        <constraint firstAttribute="width" constant="301" id="s4e-rr-N2T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.80784313725490198" green="0.082352941176470587" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="kqg-RR-EJN"/>
+                            <exclude reference="s4e-rr-N2T"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="kqg-RR-EJN"/>
+                            <include reference="s4e-rr-N2T"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phg-dc-PUT">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.80784313730000001" green="0.08235294118" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="wGl-DO-3Tk">
+                            <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="我是掌柜，才铺开张迎客">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="wGl-DO-3Tk"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="wGl-DO-3Tk"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="doOpenShop:" destination="-1" eventType="touchUpInside" id="xYH-ti-zcK"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_complete" translatesAutoresizingMaskIntoConstraints="NO" id="Tac-WI-lHI">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="PdA-Wh-F7v"/>
+                        <constraint firstAttribute="width" constant="70" id="emO-61-M9L"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="PdA-Wh-F7v"/>
+                            <exclude reference="emO-61-M9L"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="PdA-Wh-F7v"/>
+                            <include reference="emO-61-M9L"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.88627450980392153" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Tac-WI-lHI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="54" id="1gv-pw-6y6"/>
+                <constraint firstAttribute="centerX" secondItem="Tac-WI-lHI" secondAttribute="centerX" id="FBw-Gr-i0g"/>
+                <constraint firstItem="lRD-hY-ckG" firstAttribute="top" secondItem="Tac-WI-lHI" secondAttribute="bottom" constant="32" id="PD8-k8-Zo3"/>
+                <constraint firstItem="phg-dc-PUT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="TjI-F4-ewx">
+                    <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="lRD-hY-ckG" secondAttribute="centerX" id="eus-yv-iGQ"/>
+                <constraint firstItem="phg-dc-PUT" firstAttribute="top" secondItem="lRD-hY-ckG" secondAttribute="bottom" constant="34" id="fFj-jK-ccQ"/>
+                <constraint firstAttribute="trailing" secondItem="phg-dc-PUT" secondAttribute="trailing" constant="20" id="o77-eM-WeN">
+                    <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="lRD-hY-ckG"/>
+                    <exclude reference="phg-dc-PUT"/>
+                    <exclude reference="Tac-WI-lHI"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="PD8-k8-Zo3"/>
+                    <exclude reference="eus-yv-iGQ"/>
+                    <exclude reference="TjI-F4-ewx"/>
+                    <exclude reference="fFj-jK-ccQ"/>
+                    <exclude reference="o77-eM-WeN"/>
+                    <exclude reference="1gv-pw-6y6"/>
+                    <exclude reference="FBw-Gr-i0g"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="lRD-hY-ckG"/>
+                    <include reference="phg-dc-PUT"/>
+                    <include reference="Tac-WI-lHI"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="PD8-k8-Zo3"/>
+                    <include reference="eus-yv-iGQ"/>
+                    <include reference="TjI-F4-ewx"/>
+                    <include reference="fFj-jK-ccQ"/>
+                    <include reference="o77-eM-WeN"/>
+                    <include reference="1gv-pw-6y6"/>
+                    <include reference="FBw-Gr-i0g"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_complete" width="70" height="70"/>
+    </resources>
+</document>

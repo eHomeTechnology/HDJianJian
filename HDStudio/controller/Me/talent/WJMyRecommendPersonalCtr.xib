@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WJMyRecommendPersonalCtr">
+            <connections>
+                <outlet property="lb_null" destination="Qoc-61-bJi" id="8mE-7T-ke3"/>
+                <outlet property="tbv" destination="A69-Jp-GMy" id="deK-ME-EWw"/>
+                <outlet property="v_null" destination="sv9-fD-8P6" id="z7H-aS-4qn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v_null" translatesAutoresizingMaskIntoConstraints="NO" id="sv9-fD-8P6">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="c7Y-PS-CRH"/>
+                        <constraint firstAttribute="height" constant="60" id="dh1-Dt-snn"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="c7Y-PS-CRH"/>
+                            <exclude reference="dh1-Dt-snn"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="c7Y-PS-CRH"/>
+                            <include reference="dh1-Dt-snn"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抱歉 ! 暂无数据" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoc-61-bJi">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="0MR-m8-RoZ"/>
+                        <constraint firstAttribute="width" constant="120" id="aFt-qB-AF9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0MR-m8-RoZ"/>
+                            <exclude reference="aFt-qB-AF9"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="0MR-m8-RoZ"/>
+                            <include reference="aFt-qB-AF9"/>
+                        </mask>
+                    </variation>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="A69-Jp-GMy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nnY-ae-yES"/>
+                        <outlet property="delegate" destination="-1" id="UgF-wZ-wq6"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="A69-Jp-GMy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0gt-50-f8p"/>
+                <constraint firstAttribute="trailing" secondItem="A69-Jp-GMy" secondAttribute="trailing" id="W7B-aK-f4h"/>
+                <constraint firstItem="A69-Jp-GMy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Xsx-Np-zeJ"/>
+                <constraint firstAttribute="bottom" secondItem="A69-Jp-GMy" secondAttribute="bottom" id="bqP-sc-oxo"/>
+                <constraint firstItem="Qoc-61-bJi" firstAttribute="top" secondItem="sv9-fD-8P6" secondAttribute="bottom" constant="15" id="lCk-iO-TDQ"/>
+                <constraint firstItem="sv9-fD-8P6" firstAttribute="centerX" secondItem="Qoc-61-bJi" secondAttribute="centerX" id="ukn-Gu-EOm"/>
+                <constraint firstAttribute="centerY" secondItem="sv9-fD-8P6" secondAttribute="centerY" id="xgN-iv-TR3">
+                    <variation key="heightClass=regular-widthClass=compact" constant="22"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="sv9-fD-8P6" secondAttribute="centerX" id="xjv-ZJ-XrU"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="sv9-fD-8P6"/>
+                    <exclude reference="Qoc-61-bJi"/>
+                    <exclude reference="A69-Jp-GMy"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="lCk-iO-TDQ"/>
+                    <exclude reference="ukn-Gu-EOm"/>
+                    <exclude reference="xgN-iv-TR3"/>
+                    <exclude reference="xjv-ZJ-XrU"/>
+                    <exclude reference="0gt-50-f8p"/>
+                    <exclude reference="W7B-aK-f4h"/>
+                    <exclude reference="Xsx-Np-zeJ"/>
+                    <exclude reference="bqP-sc-oxo"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="sv9-fD-8P6"/>
+                    <include reference="Qoc-61-bJi"/>
+                    <include reference="A69-Jp-GMy"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="lCk-iO-TDQ"/>
+                    <include reference="ukn-Gu-EOm"/>
+                    <include reference="xgN-iv-TR3"/>
+                    <include reference="xjv-ZJ-XrU"/>
+                    <include reference="0gt-50-f8p"/>
+                    <include reference="W7B-aK-f4h"/>
+                    <include reference="Xsx-Np-zeJ"/>
+                    <include reference="bqP-sc-oxo"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="v_null" width="80" height="80"/>
+    </resources>
+</document>

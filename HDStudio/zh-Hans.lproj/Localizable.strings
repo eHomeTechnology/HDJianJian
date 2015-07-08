@@ -1,0 +1,317 @@
+/* 
+  LS.strings
+  JianJian
+
+  Created by Hu Dennis on 15/3/12.
+  Copyright (c) 2015年 Hu Dennis. All rights reserved.
+*/
+/********************
+ 
+ ********************/
+
+/********************
+ title,界面上展示的文字
+ ********************/
+"TXT_TITLE_NEWS"                = "消息";
+"TXT_TITLE_CONTACT"             = "联系人";
+"TXT_TITLE_JIAN"                = "荐荐";
+"TXT_TITLE_ME"                  = "我";
+"TXT_TITLE_LOGIN"               = "登录";
+"TXT_TITLE_REGISTER"            = "注册";
+"TXT_TITLE_LOGIN"               = "登录";
+"TXT_TITLE_LOGIN"               = "登录";
+"TXT_TITLE_SEARCH"              = "搜索";
+"TXT_TITLE_SELECT_COMPANY"      = "选择公司";
+"TXT_TITLE_SELECT_POSITION"     = "选择职位";
+"TXT_TITLE_IMPORT_SUCCESS"      = "导入成功";
+"TXT_TITLE_MY_POSITIONS"        = "我的职位";
+"TXT_TITLE_MY_TALENT"           = "我的人才库";
+"TXT_TITLE_ADD_TALENT"          = "新增简历";
+"TXT_TITLE_JFRIEND_EVALUATE"    = "荐友的推荐和评价";
+"TXT_TITLE_SHOW_RECOMMEND"      = "查看人选";
+"TXT_TITLE_POSITION_DETAIL"     = "职位详情";
+"TXT_TITLE_JJ_FRIEND_CIRCLE"    = "荐荐";
+"TXT_TITLE_SERVER_CENTER"       = "服务中心";
+"TXT_TITLE_FIND_TALENT_BROKER"  = "找荐客";
+"TXT_TITLE_ADD_FRIEND"          = "添加好友";
+"TXT_TITLE_REPOST_POSITION"     = "转发职位";
+"TXT_TITLE_IMPORT_TALENT_EMAIL" = "从邮箱导入";
+"TXT_TITLE_IMPORT_INTERNET"     = "从人才网导入";
+"TXT_TITLE_FROM_LOCAL_DOCUMENT" = "从本地文件导入";
+"TXT_TITLE_JJ_FRIEND_DETAIL"    = "荐友详情";
+"TXT_TITLE_RECOMMEND_LIST"      = "人选列表";
+"TXT_TITLE_TALENT_LIST"         = "人才列表";
+"TXT_TITLE_SET_JJ_ACCOUNT"      = "设置荐荐账户";
+"TXT_TITLE_REGISTERED_SUC"      = "注册成功";
+"TXT_TITLE_SELECT_YOUR_CITY"    = "选择城市";
+"TXT_TITLE_SELECT_TRADE"        = "选择行业";
+"TXT_TITLE_SELECT_POST"         = "选择职能";
+"TXT_TITLE_SELECT_WORKEXP"      = "选择工作年限";
+"TXT_TITLE_SETTING"             = "设置";
+"TXT_TITLE_CHANGE_PASSWORD"     = "修改密码";
+"TXT_TITLE_ABOUT_US"            = "关于";
+"TXT_TITLE_SEARCH_ORDER"        = "找订单";
+"TXT_TITLE_MY_ORDER"            = "我的订单";
+"TXT_TITLE_RELEASE_POSITION"    = "发布职位";
+"TXT_TITLE_SELECT_PSTI_DESC"    = "选择描述";
+"HD_TITLE_MY_PROFILE"           = "我的荐客信息";
+"HD_TITLE_DISCOVER"             = "发现";
+"HD_TITLE_MY_JIANJIAN"          = "我的荐客";
+
+//登录注册
+"TXT_REGISTER_CHOOSE_PICTURE"   = "选择图片";
+"TXT_REGISTER_TAKE_PHOTO"       = "拍一张";
+"TXT_CHOOSE_FROM_ALBUM"         = "从相册选择";
+"TXT_YOUR_SERVED_TRADE"         = "擅长行业";
+"TXT_YOUR_SERVED_POSITION"      = "擅长职位";
+"TXT_YOUR_WORKED_CITY"          = "所在区域";
+"TXT_YOUR_WORKED_YEARS"         = "工作年限";
+"TXT_CURRENT_CITY"              = "当前城市";
+"TXT_LOCATE_..."                = "定位中...";
+"TXT_YOUR_WORKED_AREAS"         = "所在城市";
+"TXT_YOUR_KEYWORD"              = "关键字";
+
+//荐荐
+"TXT_JJ_JIAN_YOU_QUAN"          = "荐友圈";
+"TXT_JJ_WO_XUYAO_RENCAI"        = "我需要人才";
+"TXT_JJ_WO_TUIJIAN_RENCAI"      = "我推荐人才";
+"TXT_JJ_WODE_RENCAI"            = "我的人才";
+"TXT_JJ_FUWU_ZHONGXIN"          = "服务中心";
+
+//找荐客
+"TXT_JJ_SEARCH"                 = "搜索";
+"TXT_ZJK_SEARCH"                = "请输入关键字／昵称／荐荐号";
+"TXT_ZJK_UNLIMITED"             = "不限";
+"TXT_JJ_BROKERLIST"             = "荐客列表";
+"TXT_JJ_BROKERDETAILS"          = "荐客详情";
+
+//找订单
+"TXT_JJ_ORDER_TRADE"                    = "行       业";
+"TXT_JJ_ORDER_POSITION"                 = "职位类别";
+"TXT_JJ_ORDER_AREAS"                    = "工作地点";
+"TXT_JJ_ORDER_REWARD"                   = "赏金";
+"TXT_JJ_ORDER_LIST"                     = "订单列表";
+"TXT_JJ_ORDER_CHECK"                    = "查看订单";
+"TXT_JJ_CHECK_EMPLOYER"                 = "查看雇主";
+"TXT_JJ_RECOMMEND_RESUME"               = "推荐简历";
+"TXT_JJ_EVALUATION_CANDIDATE"           = "评价人选";
+"TXT_JJ_RECOMMEND_INFORMATION"          = "推荐人信息";
+"TXT_JJ_RECOMMEND_SUCCESS"              = "推荐成功";
+
+//荐荐-HDPstiShowViewCtr
+"TXT_JJ_POSITION_DETAIL_SAVE"       = "保存";
+"TXT_JJ_EMPLOYER_DESCRIBE"          = "职位要求、薪酬福利、推荐有奖等";
+"TXT_JJ_POSITION_DESCRIBE"          = "把雇主的亮点都晒出来吧";
+"TXT_JJ_DELETE_FALSE"               = "删除失败";
+"TXT_JJ_DELETE_SUCCESS"             = "删除成功";
+
+"TXT_JJ_FABU_ZHIWEI"                = "发布职位";
+"TXT_JJ_WODE_ZHIWEI"                = "我的职位";
+"TXT_JJ_ZHAO_RENCAI_JINGJIREN"      = "找荐客";
+"TXT_JJ_ZHAO_DINGDAN"               = "找订单";
+"TXT_JJ_WODE_DINGDAN"               = "我的订单";
+"TXT_JJ_XINZEN_RENCAI"              = "新增人才";
+"TXT_JJ_WODE_RENCAIKU"              = "我的人才库";
+
+//荐荐-职位
+"TXT_JJ_SHOUGONG_LURU"              = "手工录入";
+"TXT_JJ_RENCAIWANG_DAORU"           = "人才网导入";
+"TXT_JJ_ZHUANFA_SHANGJIN"           = "转发职位拿赏金";
+"TXT_JJ_POSITION_LAST_UPDATE: %@"   = "最后更新:%@";
+"TXT_JJ_RELEASE_TO_REFRESH..."      = "松开手更新...";
+"TXT_JJ_PULL_DOWN_TO_REFRESH..."    = "下拉刷新...";
+"TXT_JJ_LOADING..."                 = "加载中...";
+"TXT_JJ_RELEASE_TO_LOAD_MORE..."    = "松开手加载更多...";
+"TXT_JJ_PUUL_UP_TO_LOAD_MORE..."    = "上拉加载更多...";
+"TXT_JJ_REWORD_SETTING"             = "设置";
+"TXT_JJ_REWORD"                     = "悬赏";
+"TXT_JJ_REWORD_MONEY"               = "悬赏金";
+"TXT_JJ_POSITION_NAME"              = "职位名称";
+"TXT_JJ_POSITION_DESCRIBE"          = "职位描述";
+"TXT_JJ_WORK_ADDRESS"               = "工作地点";
+"TXT_JJ_POSITION_TYPE"              = "职位类别";
+"TXT_JJ_SALARY_OF_ONE_YEAR"         = "年       薪";
+"TXT_JJ_WORK_YEARS"                 = "工作年限";
+"TXT_JJ_EDUCATION"                  = "学       历";
+"TXT_JJ_CANNOT_BE_NIL"              = "(必填)";
+"TXT_JJ_PLEASE_SELECT"              = "请选择";
+"TXT_JJ_POSITION_DESC_PLACEHOLD"    = "职位要求，岗位要求等";
+"TXT_JJ_ENTER_POSITION_NAME"        = "职位名称";
+"TXT_JJ_POSITION_REWARD"            = "设置悬赏金";
+"TXT_JJ_POSITION_SET_REWARD_SUCCESS"= "您的悬赏金设置成功,您还可以预先缴纳\"保证金\",这样可以提高职位的可信度和招聘效率哦!";
+"TXT_JJ__MONEY_REMIT"               = "预交保证金";
+"HD_BUTTON_TITLE_CONPLET"           = "完成";
+
+//荐荐-查看人选
+"TXT_JJ_RECOMMEND_SUITABLE"         = "人选合适";//@"待定", @"人选不合适", @"面试", @"录用", @"上岗",
+"TXT_JJ_RECOMMEND_DEPENDING"        = "待定";
+"TXT_JJ_RECOMMEND_NOT_SUITABLE"     = "人选不合适";
+"TXT_JJ_RECOMMEND_INTERVIEW"        = "面试";
+"TXT_JJ_RECOMMEND_OFFERED"          = "录用";
+"TXT_JJ_RECOMMEND_POSTINWORRANTY"   = "上岗";
+
+//荐荐-添加人才
+"TXT_JJ_MANUAL_ENTER"               = "手动录入";
+"TXT_JJ_FROM_EMAIL"                 = "从邮箱导入";
+"TXT_JJ_FROM_INTERNET"              = "从人才网导入";
+"TXT_JJ_FROM_COMPUTER"              = "从电脑文件导入";
+
+//荐荐-人选
+"TXT_JJ_TALENT_NAME"                = "人选姓名:";
+"TXT_JJ_CURRENT_POSITION"           = "目前职位:";
+"TXT_JJ_CURRENT_COMPANY"            = "目前公司:";
+"TXT_JJ_WORK_YEAR"                  = "工作年限:";
+"TXT_JJ_CONNECT_WAY"                = "联系方式:";
+"TXT_JJ_NIAN_YI_SHANG"              = "年以上";
+"TXT_JJ_MANUAL_ADD_TALENT"          = "手动添加简历";
+
+//联系人
+"TXT_CONTACT_NEW_FRIEND"            = "新的朋友";
+"TXT_CONTACT_J_FRIEND"              = "荐友";
+"TXT_CONTACT_TALENT"                = "人才";
+"TXT_CONTACT_TRADE_GROUP"           = "行业群组";
+"TXT_CONTACT_PHONE_ADDRESS_BOOK"    = "手机联系人";
+
+//我
+"TXT_ME_MY_RELEASED"                = "我发布的";
+"TXT_ME_MY_COLLECTED"               = "收藏";
+"TXT_ME_MY_WALLET"                  = "钱包";
+"TXT_ME_SETTING"                    = "设置";
+"TXT_ME_MODIFY_PASSWORD"            = "修改密码";
+"TXT_ME_FEEDBACK"                   = "意见反馈";
+"TXT_ME_ABOUT_US"                   = "关于我们";
+"TXT_ME_CHECK_FOR_IPDATE"           = "检测更新";
+"TXT_ME_LOGOUT"                     = "注销";
+"TXT_ME_OLD_PASSWORD"               = "旧 密 码";
+"TXT_ME_NEW_PASSWORD"               = "新 密 码";
+"TXT_ME_NEW_PASSWORD_AGAIN"         = "再次输入";
+"TXT_ME_CHANGE_PASSWORD_CONFIRM"    = "确定";
+"TXT_ME_PROFILE_NICKNAME"           = "昵      称";
+"HD_ME_PROFILE_AREA"                = "地      区";
+"TXT_ME_PROFILE_PHONE_NUMBER"       = "联系电话";
+"TXT_ME_PROFILE_WEICHAT"            = "微  信  号";
+"TXT_ME_PROFILE_QQ_NUMBER"          = "QQ     号";
+"TXT_ME_PROFILE_SAVE"               = "保存";
+"TXT_ME_ABOUT_SOFT_VERSION"         = "软件版本";
+"TXT_ME_ABOUT_AFFICEAL_NET_STATE"   = "官方网站";
+"TXT_ME_ABOUT_EMAIL_ADDRESS"        = "邮箱地址";
+
+/*****************
+    跳出提示
+ *****************/
+"TXT_PROMPT_WRONG_PHONE"                = "手机号码输入有误";
+"TXT_PROMPT_WRONG_PASSWORD"             = "密码输入有误";
+"TXT_PROMPT_FAIL_GET_SESSION_KEY"       = "获取秘钥失败";
+"TXT_PLEASE_ENTER_COMPAMY_NAME"         = "请输入公司名称";
+"TXT_NOT_FOUND_THE_COMPANY"             = "未找到该公司";
+"TXT_PLEASE_CHOOSE_A_COMPANY"           = "请选择一家公司";
+"TXT_PLEASE_SELECT_POSITION"            = "请选择要导入的职位";
+"TXT_PLEASE_ENTER_NAME"                 = "请输入人选姓名";
+"TXT_THE_MAX_NAME_IS_50"                = "人选姓名不超过50个字符";
+"TXT_PLEASE_ENTER_POSITION"             = "请输入职位";
+"TXT_THE_MAX_POSITION_IS_50"            = "职位输入不超过50个字符";
+"TXT_PLEASE_ENTER_COMPANY"              = "请输入公司名称";
+"TXT_THE_MAX_COMPANY_IS_50"             = "公司输入不超过50个字符";
+"TXT_PLEASE_ENTER_WORK_YEARS"           = "请输入工作年限";
+"TXT_THE_MAX_WORK_TIME_100"             = "工作年限不超过100年";
+"TXT_PHONE_NUMBER_INCORRECT"            = "电话号码输入不正确";
+"TXT_CANCEL"                            = "取消";
+"TXT_CONFIRM"                           = "确定";
+"TXT_PROMPT"                            = "提示";
+"TXT_ARE_U_SURE_DIALING"                = "确定要拨打电话";
+"TXT_CANNOT_GET_THE_DATA"               = "无法获取人选数据";
+"TXT_ENTER_LEAST_6_PASSWORD"            = "请输入至少6位数密码";
+"TXT_PLEASE_ENTER_YOUR_NICK_NAME"       = "请输入你的昵称";
+"TXT_PLEASE_CHOOSE_ONE"                 = "您还未选择，请选择";
+"TXT_PRESET_ITEMS_CANNOT_BE_NULL"       = "选择项不能为空";
+"TXT_PLEASE_ENTER_OLD_PASSWORD"         = "请输入旧密码";
+"TXT_PLEASE_ENTER_NEW_PASSWORD"         = "请输入新密码";
+"TXT_TOW_NEW_PASSWORD_IS_DIFFERENT"     = "两次输入密码不正确";
+"TXT_CHANGE_PWD_SUCCEED_PLEASE_RELOGIN" = "密码修改成功，请使用新密码重新登录";
+"TXT_PLEASE_SAY_SOMETHING"              = "请说点什么吧";
+"TXT_PLEASE_ENTER_LESS_THEN_1000"       = "输入请少于1000个字符";
+
+/**************
+ 网络加载过程提示
+ **************/
+"TXT_LODING_LOGIN"                      = "登录中...";
+"TXT_LODING_UPDATE_DATA"                = "更新数据...";
+"TXT_LODING_TRYING"                     = "加载中...";
+
+
+//分享
+"TXT_SHARE_CONTENT"         = "我用荐荐招聘，请帮我推荐人才";
+
+/**************
+    吴健
+ **************/
+
+//title
+"WJ_TITLE_WALLET"               = "钱包";
+"WJ_TITLE_TOTALOUT_LIST"        = "支付清单";
+"WJ_TITLE_TOTALIN_LIST"         = "收入清单";
+"WJ_TITLE_PAY_DETAILS"          = "支付详情";
+"WJ_TITLE_ONLINE_PAY"           = "在线支付";
+"WJ_TITLE_ONLINE_RECHARGE"      = "在线充值";
+"WJ_TITLE_PAY_REWARD"           = "支付赏金";
+"WJ_TITLE_EDIT_TALENT"          = "编辑人选";
+"WJ_TITLE_POST_REWARD"          = "悬赏专区";
+"WJ_TITLE_HIGHT_TALENT"         = "高级人才库";
+"WJ_TITLE_BROKER_DETAILS"       = "荐客详情";
+"WJ_TITLE_TALENT_LIST"          = "人选列表";
+"WJ_TITLE_BOSS"                 = "Boss";
+"WJ_TITLE_ENTERPRISE_MANAGER"   = "企业高管";
+"WJ_TITLE_ENTERPRISE_HR"        = "企业HR";
+"WJ_TITLE_HEADHUNTER"           = "猎头";
+"WJ_TITLE_SEARCH"               = "搜索";
+"WJ_TITLE_CHECK_POSITION"       = "查看职位";
+"WJ_TITLE_BUY_TALENT_SERVICE"   = "购买推荐人选服务";
+"WJ_TITLE_ORDER_LIST"           = "订单列表";
+"WJ_TITLE_SERVICE_SUCCESS"      = "完成服务";
+"WJ_TITLE_BINDING_PHONE"        = "绑定手机号";
+"WJ_TITLE_SET_BROKER_MESSAGE"   = "设置荐客信息";
+"WJ_TITLE_PERSONAL_DETAILS"     = "人选详情";
+"WJ_TITLE_CHECK_PERSONAL"       = "查看人选";
+"WJ_TITLE_CONFIRM_RELEASE"      = "发布人选";
+"WJ_TITLE_ADD_PERSONAL"         = "添加人选";
+"WJ_TITLE_EDIT_PERSONAL"        = "编辑人选";
+"WJ_TITLE_MY_RECOMEND_PERSONAL" = "我推荐的人选";
+"WJ_TITLE_SELL_SERVICE_LIST"    = "服务订单－出售的服务";
+"WJ_TITLE_BUY_SERVICE_LIST"     = "服务订单－购买的服务";
+"WJ_TITLE_WITHDRAW"             = "提现";
+"WJ_TITLE_FEEDBACK"             = "意见反馈";
+"WJ_TITLE_CHECK_SERVICE"        = "查看服务";
+"WJ_TITLE_RECOMMEND_PERSONAL"   = "推荐人选";
+"WJ_TITLE_FEEDBACKS"            = "意见反馈";
+"WJ_TITLE_MY_ATTENTION"         = "我的关注";
+"WJ_TITLE_MY_FANS"              = "我的粉丝";
+
+//找人才
+"WJ_SEARCH_TALENT_BUSINESS"     = "推荐行业";
+"WJ_SEARCH_TALENT_POSITION"     = "推荐职位";
+"WJ_SEARCH_TALENT_EDUCATION"    = "学        历";
+"WJ_SEARCH_TALENT_WORKYEARS"    = "工作年限";
+"WJ_SEARCH_TALENT_WORKPLACE"    = "推荐工作地点";
+
+//找荐客
+"WJ_SEARCH_BROKER_BUSINESS"     = "擅长行业";
+"WJ_SEARCH_BROKER_POSITION"     = "擅长职位";
+"WJ_SEARCH_BROKER_WORKYEARS"    = "工作年限";
+"WJ_SEARCH_BROKER_CITY"         = "所在城市";
+
+//找职位
+"WJ_SEARCH_POSITION_BUSINESS"   = "行        业";
+"WJ_SEARCH_POSITION_POSITION"   = "职        位";
+"WJ_SEARCH_POSITION_WORKPLACE"  = "工作地点";
+"WJ_SEARCH_POSITION_REWARD"     = "赏        金";
+
+//支付方式
+"WJ_ME_PAY_UNIONPAY"                = "银联支付";
+"WJ_ME_PAY_ALIPAY"                  = "支付宝支付";
+"WJ_ME_PAY_WCHAT"                   = "微信支付";
+
+"WJ_ME_PAY_UNIONPAY_CONTENT"        = "银联支付,安全快捷的支付方式";
+"WJ_ME_PAY_ALIPAY_CONTENT"          = "支持快捷支付无需开通网银";
+"WJ_ME_PAY_WCHAT_CONTENT"           = "支持快捷支付无需开通网银";
+
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HDJJFriendsCtr">
+            <connections>
+                <outlet property="tbv" destination="hnj-Mh-V6H" id="phN-Sr-NYN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="hnj-Mh-V6H">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LkH-vq-Q2z"/>
+                        <outlet property="delegate" destination="-1" id="I9O-a8-vGw"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.88627450980392153" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="hnj-Mh-V6H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Qbr-4T-31J"/>
+                <constraint firstAttribute="trailing" secondItem="hnj-Mh-V6H" secondAttribute="trailing" id="WKO-5z-wjj">
+                    <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="hnj-Mh-V6H" secondAttribute="bottom" id="WLN-Lq-RM1">
+                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstItem="hnj-Mh-V6H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qYS-ht-6Pg">
+                    <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="hnj-Mh-V6H"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Qbr-4T-31J"/>
+                    <exclude reference="WKO-5z-wjj"/>
+                    <exclude reference="WLN-Lq-RM1"/>
+                    <exclude reference="qYS-ht-6Pg"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="hnj-Mh-V6H"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Qbr-4T-31J"/>
+                    <include reference="WKO-5z-wjj"/>
+                    <include reference="WLN-Lq-RM1"/>
+                    <include reference="qYS-ht-6Pg"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

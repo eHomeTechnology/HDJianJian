@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="jK6-A7-etK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WJPositionInfoView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="7tv-iJ-wd6">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="Rk5-RB-KdF"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Dvd-nB-hPq"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7tv-iJ-wd6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HbQ-S0-D2r"/>
+                <constraint firstItem="7tv-iJ-wd6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RbM-lC-LLm"/>
+                <constraint firstAttribute="bottom" secondItem="7tv-iJ-wd6" secondAttribute="bottom" id="SRQ-AQ-TtL"/>
+                <constraint firstAttribute="trailing" secondItem="7tv-iJ-wd6" secondAttribute="trailing" id="veZ-Ad-fhJ"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="7tv-iJ-wd6"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="HbQ-S0-D2r"/>
+                    <exclude reference="RbM-lC-LLm"/>
+                    <exclude reference="SRQ-AQ-TtL"/>
+                    <exclude reference="veZ-Ad-fhJ"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="7tv-iJ-wd6"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="HbQ-S0-D2r"/>
+                    <include reference="RbM-lC-LLm"/>
+                    <include reference="SRQ-AQ-TtL"/>
+                    <include reference="veZ-Ad-fhJ"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="tbv" destination="7tv-iJ-wd6" id="Xwc-bW-ADT"/>
+            </connections>
+            <point key="canvasLocation" x="248" y="36"/>
+        </view>
+    </objects>
+</document>

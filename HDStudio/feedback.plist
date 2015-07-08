@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>CodeID</key>
+		<integer>2565</integer>
+		<key>Key</key>
+		<string>0</string>
+		<key>Value</key>
+		<string>待反馈</string>
+	</dict>
+	<dict>
+		<key>CodeID</key>
+		<integer>2566</integer>
+		<key>Key</key>
+		<string>1</string>
+		<key>Value</key>
+		<string>人选合适</string>
+	</dict>
+	<dict>
+		<key>CodeID</key>
+		<integer>2567</integer>
+		<key>Key</key>
+		<string>2</string>
+		<key>Value</key>
+		<string>待定</string>
+	</dict>
+	<dict>
+		<key>CodeID</key>
+		<integer>2568</integer>
+		<key>Key</key>
+		<string>3</string>
+		<key>Value</key>
+		<string>人选不合适</string>
+	</dict>
+	<dict>
+		<key>CodeID</key>
+		<integer>2569</integer>
+		<key>Key</key>
+		<string>4</string>
+		<key>Value</key>
+		<string>面试</string>
+	</dict>
+	<dict>
+		<key>CodeID</key>
+		<integer>2570</integer>
+		<key>Key</key>
+		<string>5</string>
+		<key>Value</key>
+		<string>录用</string>
+	</dict>
+	<dict>
+		<key>CodeID</key>
+		<integer>2571</integer>
+		<key>Key</key>
+		<string>6</string>
+		<key>Value</key>
+		<string>上岗</string>
+	</dict>
+</array>
+</plist>
