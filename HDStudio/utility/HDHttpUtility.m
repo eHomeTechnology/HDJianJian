@@ -21,7 +21,7 @@
     static HDHttpUtility *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[self alloc] initWithBaseURL:[NSURL URLWithString:IP]];//@"http://JJ.liudu.com/API/"http://fuzhouliudu.eicp.net:30004/API/
+        _sharedClient = [[self alloc] initWithBaseURL:[NSURL URLWithString:IP]];
     });
     return _sharedClient;
 }
