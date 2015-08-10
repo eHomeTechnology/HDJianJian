@@ -37,9 +37,6 @@
 #import "WJBankInfo.h"
 #import "WJLinkmanListInfo.h"
 
-#define IP @"http://app2.liudu.com/API/"
-//#define IP @"http://fuzhouliudu.eicp.net:30004/API/"
-//#define IP @"http://JJ.liudu.com/API/"
 
 @interface HDHttpUtility : AFHTTPClient{
 
